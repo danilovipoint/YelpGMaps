@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		195947489AA20E0FDA3A0847 /* Pods_YelpGMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06BC93893BA6BBB3CB97E6B /* Pods_YelpGMaps.framework */; };
+		277F1A3DCA3036FAA5CF9722 /* Pods_YelpGMapsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AF708176761A71A5E7436 /* Pods_YelpGMapsTests.framework */; };
+		3C1853EE1EE550F600909E3E /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1853ED1EE550F600909E3E /* Address.swift */; };
+		3C1853F01EE5510400909E3E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1853EF1EE5510400909E3E /* Category.swift */; };
+		3C1853F21EE55AC600909E3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1853F11EE55AC600909E3E /* User.swift */; };
+		3C1853F41EE57A2300909E3E /* UserReview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1853F31EE57A2300909E3E /* UserReview.xib */; };
+		3C1853F61EE5BA4200909E3E /* CustomMarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1853F51EE5BA4200909E3E /* CustomMarkerInfoView.xib */; };
+		3C1853FE1EE5C7CA00909E3E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1853FC1EE5C7CA00909E3E /* SettingsTableViewCell.swift */; };
+		3C1853FF1EE5C7CA00909E3E /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1853FD1EE5C7CA00909E3E /* SettingsTableViewCell.xib */; };
+		3C1854021EE6756700909E3E /* MapSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1854001EE6756700909E3E /* MapSettingsTableViewCell.swift */; };
+		3C1854031EE6756700909E3E /* MapSettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1854011EE6756700909E3E /* MapSettingsTableViewCell.xib */; };
+		3C1854061EE680AE00909E3E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1854051EE680AE00909E3E /* CustomButton.swift */; };
+		3C2807351EE1395E00C299BD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2807341EE1395E00C299BD /* AboutViewController.swift */; };
+		3C2807371EE13CF100C299BD /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2807361EE13CF100C299BD /* ParentViewController.swift */; };
+		3C28073A1EE16C8900C299BD /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2807391EE16C8900C299BD /* Business.swift */; };
+		3C28073C1EE1709D00C299BD /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28073B1EE1709D00C299BD /* Review.swift */; };
+		3C2807401EE1795D00C299BD /* CustomMarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28073F1EE1795D00C299BD /* CustomMarkerInfoView.swift */; };
+		3C2807421EE179DA00C299BD /* UserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2807411EE179DA00C299BD /* UserReview.swift */; };
+		3C545E9C1EE7CCF700F26346 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C545E9B1EE7CCF700F26346 /* CustomView.swift */; };
+		3C9875881EE802640071351C /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9875871EE802640071351C /* OverlayView.swift */; };
+		3C98758A1EE803640071351C /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9875891EE803640071351C /* CustomAlertView.swift */; };
+		3C98758C1EE804180071351C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98758B1EE804180071351C /* ReportView.swift */; };
+		3C98758E1EE804230071351C /* ReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C98758D1EE804230071351C /* ReportView.xib */; };
+		3CAC09761EDFEF7C00BF84DD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC09751EDFEF7C00BF84DD /* UIViewControllerExtensions.swift */; };
+		3CB18C3F1EDEAE2B00DBCF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C3E1EDEAE2B00DBCF88 /* AppDelegate.swift */; };
+		3CB18C441EDEAE2B00DBCF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB18C421EDEAE2B00DBCF88 /* Main.storyboard */; };
+		3CB18C471EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C451EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodeld */; };
+		3CB18C491EDEAE2B00DBCF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB18C481EDEAE2B00DBCF88 /* Assets.xcassets */; };
+		3CB18C4C1EDEAE2B00DBCF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB18C4A1EDEAE2B00DBCF88 /* LaunchScreen.storyboard */; };
+		3CB18C571EDEAE2B00DBCF88 /* YelpGMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C561EDEAE2B00DBCF88 /* YelpGMapsTests.swift */; };
+		3CB18C621EDEAE2B00DBCF88 /* YelpGMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C611EDEAE2B00DBCF88 /* YelpGMapsUITests.swift */; };
+		3CB18C731EDEAFEB00DBCF88 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C721EDEAFEB00DBCF88 /* GlobalConstants.swift */; };
+		3CB18C761EDEB1F600DBCF88 /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C751EDEB1F600DBCF88 /* GMapViewController.swift */; };
+		3CB18C781EDEC26600DBCF88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C771EDEC26600DBCF88 /* SettingsViewController.swift */; };
+		3CB18C7A1EDF3AA300DBCF88 /* BusinessDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C791EDF3AA300DBCF88 /* BusinessDetailsViewController.swift */; };
+		3CB18C7D1EDF3B4800DBCF88 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB18C7C1EDF3B4800DBCF88 /* DataService.swift */; };
+		3CDFF85E1EE7196800837841 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFF85D1EE7196800837841 /* Settings.swift */; };
+		3CDFF8601EE71ADA00837841 /* CurrentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFF85F1EE71ADA00837841 /* CurrentValues.swift */; };
+		5CCE76FD69ED116A346B3A55 /* Pods_YelpGMapsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EAF302276D52CBD2076966 /* Pods_YelpGMapsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CB18C531EDEAE2B00DBCF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB18C331EDEAE2B00DBCF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB18C3A1EDEAE2B00DBCF88;
+			remoteInfo = YelpGMaps;
+		};
+		3CB18C5E1EDEAE2B00DBCF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB18C331EDEAE2B00DBCF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB18C3A1EDEAE2B00DBCF88;
+			remoteInfo = YelpGMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DE2FD5E7C515B0C4342B9DE /* Pods-YelpGMapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMapsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMapsTests/Pods-YelpGMapsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1853ED1EE550F600909E3E /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3C1853EF1EE5510400909E3E /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3C1853F11EE55AC600909E3E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C1853F31EE57A2300909E3E /* UserReview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserReview.xib; sourceTree = "<group>"; };
+		3C1853F51EE5BA4200909E3E /* CustomMarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMarkerInfoView.xib; sourceTree = "<group>"; };
+		3C1853FC1EE5C7CA00909E3E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3C1853FD1EE5C7CA00909E3E /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		3C1854001EE6756700909E3E /* MapSettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3C1854011EE6756700909E3E /* MapSettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapSettingsTableViewCell.xib; sourceTree = "<group>"; };
+		3C1854051EE680AE00909E3E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3C2807341EE1395E00C299BD /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3C2807361EE13CF100C299BD /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		3C2807391EE16C8900C299BD /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		3C28073B1EE1709D00C299BD /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		3C28073F1EE1795D00C299BD /* CustomMarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMarkerInfoView.swift; sourceTree = "<group>"; };
+		3C2807411EE179DA00C299BD /* UserReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReview.swift; sourceTree = "<group>"; };
+		3C545E9B1EE7CCF700F26346 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		3C9875871EE802640071351C /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		3C9875891EE803640071351C /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		3C98758B1EE804180071351C /* ReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		3C98758D1EE804230071351C /* ReportView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportView.xib; sourceTree = "<group>"; };
+		3CAC09751EDFEF7C00BF84DD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		3CB18C3B1EDEAE2B00DBCF88 /* YelpGMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpGMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB18C3E1EDEAE2B00DBCF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CB18C431EDEAE2B00DBCF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CB18C461EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YelpGMaps.xcdatamodel; sourceTree = "<group>"; };
+		3CB18C481EDEAE2B00DBCF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CB18C4B1EDEAE2B00DBCF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CB18C4D1EDEAE2B00DBCF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB18C521EDEAE2B00DBCF88 /* YelpGMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpGMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB18C561EDEAE2B00DBCF88 /* YelpGMapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpGMapsTests.swift; sourceTree = "<group>"; };
+		3CB18C581EDEAE2B00DBCF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB18C5D1EDEAE2B00DBCF88 /* YelpGMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpGMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB18C611EDEAE2B00DBCF88 /* YelpGMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpGMapsUITests.swift; sourceTree = "<group>"; };
+		3CB18C631EDEAE2B00DBCF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB18C721EDEAFEB00DBCF88 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		3CB18C751EDEB1F600DBCF88 /* GMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
+		3CB18C771EDEC26600DBCF88 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3CB18C791EDF3AA300DBCF88 /* BusinessDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailsViewController.swift; sourceTree = "<group>"; };
+		3CB18C7C1EDF3B4800DBCF88 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3CDFF85D1EE7196800837841 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3CDFF85F1EE71ADA00837841 /* CurrentValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentValues.swift; sourceTree = "<group>"; };
+		3CFA76F3B9E0739626E81935 /* Pods-YelpGMapsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMapsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMapsUITests/Pods-YelpGMapsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6308C4551850EB4F33108F26 /* Pods-YelpGMapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMapsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMapsTests/Pods-YelpGMapsTests.release.xcconfig"; sourceTree = "<group>"; };
+		783AF708176761A71A5E7436 /* Pods_YelpGMapsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpGMapsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C2FA052EF67FB42BB83B4D /* Pods-YelpGMapsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMapsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMapsUITests/Pods-YelpGMapsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B15DF6212E420B0EA9C6DE7F /* Pods-YelpGMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMaps/Pods-YelpGMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		D4EAF302276D52CBD2076966 /* Pods_YelpGMapsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpGMapsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64666A9A5B37FFD9FA05588 /* Pods-YelpGMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpGMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-YelpGMaps/Pods-YelpGMaps.release.xcconfig"; sourceTree = "<group>"; };
+		F06BC93893BA6BBB3CB97E6B /* Pods_YelpGMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpGMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB18C381EDEAE2B00DBCF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195947489AA20E0FDA3A0847 /* Pods_YelpGMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C4F1EDEAE2B00DBCF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277F1A3DCA3036FAA5CF9722 /* Pods_YelpGMapsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C5A1EDEAE2B00DBCF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCE76FD69ED116A346B3A55 /* Pods_YelpGMapsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1853FB1EE5C7AD00909E3E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C1853FC1EE5C7CA00909E3E /* SettingsTableViewCell.swift */,
+				3C1853FD1EE5C7CA00909E3E /* SettingsTableViewCell.xib */,
+				3C1854001EE6756700909E3E /* MapSettingsTableViewCell.swift */,
+				3C1854011EE6756700909E3E /* MapSettingsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3C1854041EE680A400909E3E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3C1854051EE680AE00909E3E /* CustomButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3C2807381EE16C7900C299BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C2807391EE16C8900C299BD /* Business.swift */,
+				3C28073B1EE1709D00C299BD /* Review.swift */,
+				3C1853ED1EE550F600909E3E /* Address.swift */,
+				3C1853EF1EE5510400909E3E /* Category.swift */,
+				3C1853F11EE55AC600909E3E /* User.swift */,
+				3CDFF85D1EE7196800837841 /* Settings.swift */,
+				3CDFF85F1EE71ADA00837841 /* CurrentValues.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C28073D1EE1790100C299BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C1854041EE680A400909E3E /* Buttons */,
+				3C1853FB1EE5C7AD00909E3E /* Cells */,
+				3C28073E1EE1790100C299BD /* Custom */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C28073E1EE1790100C299BD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3C28073F1EE1795D00C299BD /* CustomMarkerInfoView.swift */,
+				3C1853F51EE5BA4200909E3E /* CustomMarkerInfoView.xib */,
+				3C2807411EE179DA00C299BD /* UserReview.swift */,
+				3C1853F31EE57A2300909E3E /* UserReview.xib */,
+				3C545E9B1EE7CCF700F26346 /* CustomView.swift */,
+				3C9875871EE802640071351C /* OverlayView.swift */,
+				3C9875891EE803640071351C /* CustomAlertView.swift */,
+				3C98758B1EE804180071351C /* ReportView.swift */,
+				3C98758D1EE804230071351C /* ReportView.xib */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3CAC09741EDFEF6D00BF84DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC09751EDFEF7C00BF84DD /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CB18C321EDEAE2B00DBCF88 = {
+			isa = PBXGroup;
+			children = (
+				3CB18C3D1EDEAE2B00DBCF88 /* YelpGMaps */,
+				3CB18C551EDEAE2B00DBCF88 /* YelpGMapsTests */,
+				3CB18C601EDEAE2B00DBCF88 /* YelpGMapsUITests */,
+				3CB18C3C1EDEAE2B00DBCF88 /* Products */,
+				6811E84E31D21352FBB01037 /* Pods */,
+				F88EAA2AC6D55C0E13E21D9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CB18C3C1EDEAE2B00DBCF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C3B1EDEAE2B00DBCF88 /* YelpGMaps.app */,
+				3CB18C521EDEAE2B00DBCF88 /* YelpGMapsTests.xctest */,
+				3CB18C5D1EDEAE2B00DBCF88 /* YelpGMapsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CB18C3D1EDEAE2B00DBCF88 /* YelpGMaps */ = {
+			isa = PBXGroup;
+			children = (
+				3C28073D1EE1790100C299BD /* Views */,
+				3C2807381EE16C7900C299BD /* Models */,
+				3CB18C741EDEB1BF00DBCF88 /* Controllers */,
+				3CB18C701EDEAFDC00DBCF88 /* Library */,
+				3CB18C6F1EDEAFAF00DBCF88 /* Application */,
+			);
+			path = YelpGMaps;
+			sourceTree = "<group>";
+		};
+		3CB18C551EDEAE2B00DBCF88 /* YelpGMapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C561EDEAE2B00DBCF88 /* YelpGMapsTests.swift */,
+				3CB18C581EDEAE2B00DBCF88 /* Info.plist */,
+			);
+			path = YelpGMapsTests;
+			sourceTree = "<group>";
+		};
+		3CB18C601EDEAE2B00DBCF88 /* YelpGMapsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C611EDEAE2B00DBCF88 /* YelpGMapsUITests.swift */,
+				3CB18C631EDEAE2B00DBCF88 /* Info.plist */,
+			);
+			path = YelpGMapsUITests;
+			sourceTree = "<group>";
+		};
+		3CB18C6F1EDEAFAF00DBCF88 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C3E1EDEAE2B00DBCF88 /* AppDelegate.swift */,
+				3CB18C421EDEAE2B00DBCF88 /* Main.storyboard */,
+				3CB18C481EDEAE2B00DBCF88 /* Assets.xcassets */,
+				3CB18C4A1EDEAE2B00DBCF88 /* LaunchScreen.storyboard */,
+				3CB18C4D1EDEAE2B00DBCF88 /* Info.plist */,
+				3CB18C451EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodeld */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		3CB18C701EDEAFDC00DBCF88 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC09741EDFEF6D00BF84DD /* Extensions */,
+				3CB18C7B1EDF3B3A00DBCF88 /* Services */,
+				3CB18C711EDEAFDC00DBCF88 /* Constants */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		3CB18C711EDEAFDC00DBCF88 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C721EDEAFEB00DBCF88 /* GlobalConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3CB18C741EDEB1BF00DBCF88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C751EDEB1F600DBCF88 /* GMapViewController.swift */,
+				3CB18C771EDEC26600DBCF88 /* SettingsViewController.swift */,
+				3CB18C791EDF3AA300DBCF88 /* BusinessDetailsViewController.swift */,
+				3C2807341EE1395E00C299BD /* AboutViewController.swift */,
+				3C2807361EE13CF100C299BD /* ParentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CB18C7B1EDF3B3A00DBCF88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CB18C7C1EDF3B4800DBCF88 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6811E84E31D21352FBB01037 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15DF6212E420B0EA9C6DE7F /* Pods-YelpGMaps.debug.xcconfig */,
+				D64666A9A5B37FFD9FA05588 /* Pods-YelpGMaps.release.xcconfig */,
+				1DE2FD5E7C515B0C4342B9DE /* Pods-YelpGMapsTests.debug.xcconfig */,
+				6308C4551850EB4F33108F26 /* Pods-YelpGMapsTests.release.xcconfig */,
+				A9C2FA052EF67FB42BB83B4D /* Pods-YelpGMapsUITests.debug.xcconfig */,
+				3CFA76F3B9E0739626E81935 /* Pods-YelpGMapsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F88EAA2AC6D55C0E13E21D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06BC93893BA6BBB3CB97E6B /* Pods_YelpGMaps.framework */,
+				783AF708176761A71A5E7436 /* Pods_YelpGMapsTests.framework */,
+				D4EAF302276D52CBD2076966 /* Pods_YelpGMapsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB18C3A1EDEAE2B00DBCF88 /* YelpGMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB18C661EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMaps" */;
+			buildPhases = (
+				19C3053B5CCDAA4AECD00C3D /* [CP] Check Pods Manifest.lock */,
+				3CB18C371EDEAE2B00DBCF88 /* Sources */,
+				3CB18C381EDEAE2B00DBCF88 /* Frameworks */,
+				3CB18C391EDEAE2B00DBCF88 /* Resources */,
+				F15524DD0D909146608197CD /* [CP] Embed Pods Frameworks */,
+				DFCCD207F1D653D3381C2D91 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YelpGMaps;
+			productName = YelpGMaps;
+			productReference = 3CB18C3B1EDEAE2B00DBCF88 /* YelpGMaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CB18C511EDEAE2B00DBCF88 /* YelpGMapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB18C691EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMapsTests" */;
+			buildPhases = (
+				8B41B3E483FC9E97674DDB86 /* [CP] Check Pods Manifest.lock */,
+				3CB18C4E1EDEAE2B00DBCF88 /* Sources */,
+				3CB18C4F1EDEAE2B00DBCF88 /* Frameworks */,
+				3CB18C501EDEAE2B00DBCF88 /* Resources */,
+				8F803D85D19B94DE1E5E07CE /* [CP] Embed Pods Frameworks */,
+				F927B1B541A2B7E3D48ABFDE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB18C541EDEAE2B00DBCF88 /* PBXTargetDependency */,
+			);
+			name = YelpGMapsTests;
+			productName = YelpGMapsTests;
+			productReference = 3CB18C521EDEAE2B00DBCF88 /* YelpGMapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CB18C5C1EDEAE2B00DBCF88 /* YelpGMapsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB18C6C1EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMapsUITests" */;
+			buildPhases = (
+				D45FF686959815555907CE14 /* [CP] Check Pods Manifest.lock */,
+				3CB18C591EDEAE2B00DBCF88 /* Sources */,
+				3CB18C5A1EDEAE2B00DBCF88 /* Frameworks */,
+				3CB18C5B1EDEAE2B00DBCF88 /* Resources */,
+				FA8DE61BDB1A315142E11513 /* [CP] Embed Pods Frameworks */,
+				633E1406AA6CE98CAE85299A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB18C5F1EDEAE2B00DBCF88 /* PBXTargetDependency */,
+			);
+			name = YelpGMapsUITests;
+			productName = YelpGMapsUITests;
+			productReference = 3CB18C5D1EDEAE2B00DBCF88 /* YelpGMapsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CB18C331EDEAE2B00DBCF88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = iPoint;
+				TargetAttributes = {
+					3CB18C3A1EDEAE2B00DBCF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G9F5S24X43;
+						ProvisioningStyle = Automatic;
+					};
+					3CB18C511EDEAE2B00DBCF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G9F5S24X43;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3CB18C3A1EDEAE2B00DBCF88;
+					};
+					3CB18C5C1EDEAE2B00DBCF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G9F5S24X43;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3CB18C3A1EDEAE2B00DBCF88;
+					};
+				};
+			};
+			buildConfigurationList = 3CB18C361EDEAE2B00DBCF88 /* Build configuration list for PBXProject "YelpGMaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CB18C321EDEAE2B00DBCF88;
+			productRefGroup = 3CB18C3C1EDEAE2B00DBCF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CB18C3A1EDEAE2B00DBCF88 /* YelpGMaps */,
+				3CB18C511EDEAE2B00DBCF88 /* YelpGMapsTests */,
+				3CB18C5C1EDEAE2B00DBCF88 /* YelpGMapsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CB18C391EDEAE2B00DBCF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1853FF1EE5C7CA00909E3E /* SettingsTableViewCell.xib in Resources */,
+				3C1854031EE6756700909E3E /* MapSettingsTableViewCell.xib in Resources */,
+				3CB18C4C1EDEAE2B00DBCF88 /* LaunchScreen.storyboard in Resources */,
+				3C1853F61EE5BA4200909E3E /* CustomMarkerInfoView.xib in Resources */,
+				3C1853F41EE57A2300909E3E /* UserReview.xib in Resources */,
+				3CB18C491EDEAE2B00DBCF88 /* Assets.xcassets in Resources */,
+				3C98758E1EE804230071351C /* ReportView.xib in Resources */,
+				3CB18C441EDEAE2B00DBCF88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C501EDEAE2B00DBCF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C5B1EDEAE2B00DBCF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C3053B5CCDAA4AECD00C3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		633E1406AA6CE98CAE85299A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMapsUITests/Pods-YelpGMapsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B41B3E483FC9E97674DDB86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F803D85D19B94DE1E5E07CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMapsTests/Pods-YelpGMapsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45FF686959815555907CE14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCCD207F1D653D3381C2D91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMaps/Pods-YelpGMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F15524DD0D909146608197CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMaps/Pods-YelpGMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F927B1B541A2B7E3D48ABFDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMapsTests/Pods-YelpGMapsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA8DE61BDB1A315142E11513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YelpGMapsUITests/Pods-YelpGMapsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CB18C371EDEAE2B00DBCF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C98758A1EE803640071351C /* CustomAlertView.swift in Sources */,
+				3C2807421EE179DA00C299BD /* UserReview.swift in Sources */,
+				3CAC09761EDFEF7C00BF84DD /* UIViewControllerExtensions.swift in Sources */,
+				3C1853FE1EE5C7CA00909E3E /* SettingsTableViewCell.swift in Sources */,
+				3CB18C3F1EDEAE2B00DBCF88 /* AppDelegate.swift in Sources */,
+				3C1854061EE680AE00909E3E /* CustomButton.swift in Sources */,
+				3CB18C7D1EDF3B4800DBCF88 /* DataService.swift in Sources */,
+				3C2807351EE1395E00C299BD /* AboutViewController.swift in Sources */,
+				3CB18C731EDEAFEB00DBCF88 /* GlobalConstants.swift in Sources */,
+				3C545E9C1EE7CCF700F26346 /* CustomView.swift in Sources */,
+				3C9875881EE802640071351C /* OverlayView.swift in Sources */,
+				3C28073C1EE1709D00C299BD /* Review.swift in Sources */,
+				3CDFF8601EE71ADA00837841 /* CurrentValues.swift in Sources */,
+				3C1853F21EE55AC600909E3E /* User.swift in Sources */,
+				3C1853F01EE5510400909E3E /* Category.swift in Sources */,
+				3C1854021EE6756700909E3E /* MapSettingsTableViewCell.swift in Sources */,
+				3CB18C471EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodeld in Sources */,
+				3C2807371EE13CF100C299BD /* ParentViewController.swift in Sources */,
+				3C1853EE1EE550F600909E3E /* Address.swift in Sources */,
+				3CB18C7A1EDF3AA300DBCF88 /* BusinessDetailsViewController.swift in Sources */,
+				3C98758C1EE804180071351C /* ReportView.swift in Sources */,
+				3C2807401EE1795D00C299BD /* CustomMarkerInfoView.swift in Sources */,
+				3C28073A1EE16C8900C299BD /* Business.swift in Sources */,
+				3CDFF85E1EE7196800837841 /* Settings.swift in Sources */,
+				3CB18C781EDEC26600DBCF88 /* SettingsViewController.swift in Sources */,
+				3CB18C761EDEB1F600DBCF88 /* GMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C4E1EDEAE2B00DBCF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB18C571EDEAE2B00DBCF88 /* YelpGMapsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB18C591EDEAE2B00DBCF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB18C621EDEAE2B00DBCF88 /* YelpGMapsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CB18C541EDEAE2B00DBCF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB18C3A1EDEAE2B00DBCF88 /* YelpGMaps */;
+			targetProxy = 3CB18C531EDEAE2B00DBCF88 /* PBXContainerItemProxy */;
+		};
+		3CB18C5F1EDEAE2B00DBCF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB18C3A1EDEAE2B00DBCF88 /* YelpGMaps */;
+			targetProxy = 3CB18C5E1EDEAE2B00DBCF88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CB18C421EDEAE2B00DBCF88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB18C431EDEAE2B00DBCF88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CB18C4A1EDEAE2B00DBCF88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB18C4B1EDEAE2B00DBCF88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CB18C641EDEAE2B00DBCF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CB18C651EDEAE2B00DBCF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CB18C671EDEAE2B00DBCF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15DF6212E420B0EA9C6DE7F /* Pods-YelpGMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3CB18C681EDEAE2B00DBCF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64666A9A5B37FFD9FA05588 /* Pods-YelpGMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3CB18C6A1EDEAE2B00DBCF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE2FD5E7C515B0C4342B9DE /* Pods-YelpGMapsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMapsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YelpGMaps.app/YelpGMaps";
+			};
+			name = Debug;
+		};
+		3CB18C6B1EDEAE2B00DBCF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6308C4551850EB4F33108F26 /* Pods-YelpGMapsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMapsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YelpGMaps.app/YelpGMaps";
+			};
+			name = Release;
+		};
+		3CB18C6D1EDEAE2B00DBCF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C2FA052EF67FB42BB83B4D /* Pods-YelpGMapsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMapsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMapsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YelpGMaps;
+			};
+			name = Debug;
+		};
+		3CB18C6E1EDEAE2B00DBCF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFA76F3B9E0739626E81935 /* Pods-YelpGMapsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G9F5S24X43;
+				INFOPLIST_FILE = YelpGMapsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipoint.YelpGMapsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YelpGMaps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB18C361EDEAE2B00DBCF88 /* Build configuration list for PBXProject "YelpGMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB18C641EDEAE2B00DBCF88 /* Debug */,
+				3CB18C651EDEAE2B00DBCF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB18C661EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB18C671EDEAE2B00DBCF88 /* Debug */,
+				3CB18C681EDEAE2B00DBCF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB18C691EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB18C6A1EDEAE2B00DBCF88 /* Debug */,
+				3CB18C6B1EDEAE2B00DBCF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB18C6C1EDEAE2B00DBCF88 /* Build configuration list for PBXNativeTarget "YelpGMapsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB18C6D1EDEAE2B00DBCF88 /* Debug */,
+				3CB18C6E1EDEAE2B00DBCF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3CB18C451EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CB18C461EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodel */,
+			);
+			currentVersion = 3CB18C461EDEAE2B00DBCF88 /* YelpGMaps.xcdatamodel */;
+			path = YelpGMaps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3CB18C331EDEAE2B00DBCF88 /* Project object */;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" rowHeight="69" id="KGk-i7-Jjw" customClass="SettingsTableViewCell" customModule="YelpGMaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B4m-HT-Jj6">
+                        <rect key="frame" x="13" y="14" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="VbT-MJ-rA6"/>
+                            <constraint firstAttribute="height" constant="30" id="sg3-FC-jZd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPF-VF-0it">
+                        <rect key="frame" x="48" y="19" width="226" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UPF-VF-0it" firstAttribute="centerY" secondItem="B4m-HT-Jj6" secondAttribute="centerY" id="AKU-Mg-au4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UPF-VF-0it" secondAttribute="trailing" constant="5" id="EQu-Xv-Bbv"/>
+                    <constraint firstItem="B4m-HT-Jj6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="KD2-Gz-zSe"/>
+                    <constraint firstItem="UPF-VF-0it" firstAttribute="leading" secondItem="B4m-HT-Jj6" secondAttribute="trailing" constant="5" id="hgk-fQ-buz"/>
+                    <constraint firstItem="B4m-HT-Jj6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zRd-tL-mNo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="B4m-HT-Jj6" id="ulj-Sc-ZB9"/>
+                <outlet property="titleLabel" destination="UPF-VF-0it" id="Lwz-CL-dYr"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="137.5"/>
+        </tableViewCell>
+    </objects>
+</document>
