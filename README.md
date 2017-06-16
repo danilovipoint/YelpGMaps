@@ -1,7 +1,6 @@
-# YelpGMaps
-Yelp Fusion API and Google Maps in Demo Project for iOS
+# YGMaps
 
-This applications is developed for demonstration purposes. Application is developed in iPoint LLC. 
+This applications is developed in iPoint LLC. 
 Our site is www.ipoint-consulting.com. 
 Displayed data is getting from https://www.yelp.com and Yelp Fusion API is used for requesting data. 
 Google Maps are used for displaying data on the map. 
